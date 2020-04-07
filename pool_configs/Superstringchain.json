@@ -1,0 +1,76 @@
+{
+    "enabled": true,
+    "coin": "Superstringchain.json",
+
+    "address": "your pool address",
+
+    "rewardRecipients": {
+        "SUSxHzSPks9FMnX6vfweikymZRCcRa7Fc9": 25.0
+
+    },
+
+    "paymentProcessing": {
+	"minConf": 10,
+        "enabled": true,
+        "paymentMode": "prop",
+        "_comment_paymentMode":"prop, pplnt",
+        "paymentInterval": 120,
+        "minimumPayment": 0.1,
+        "maxBlocksPerPayment": 3,
+        "daemon": {
+            "host": "127.0.0.1",
+            "port": 16800,
+            "user": "xxx",
+            "password": "xxx"
+        }
+    },
+
+    "tlsOptions": {
+        "enabled": false,
+        "serverKey":"",
+        "serverCert":"",
+        "ca":""
+    },
+
+    "ports": {
+        "3032": {
+            "diff": 0.1,
+            "tls": false,
+            "varDiff": {
+                "minDiff": 0.00,
+                "maxDiff": 16,
+                "targetTime": 15,
+                "retargetTime": 60,
+                "variancePercent": 30
+            }
+        }
+    },
+
+    "daemons": [
+        {
+            "host": "127.0.0.1",
+            "port": 16800,
+            "user": "XXX",
+            "password": "XXX"
+        }
+    ],
+
+    "p2p": {
+        "enabled": false,
+        "host": "127.0.0.1",
+        "port": 25253,
+        "disableTransactions": true
+    },
+
+    "mposMode": {
+        "enabled": false,
+        "host": "127.0.0.1",
+        "port": 3306,
+        "user": "",
+        "password": "",
+        "database": "",
+        "checkPassword": true,
+        "autoCreateWorker": false
+    }
+
+}
